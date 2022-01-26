@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>tic tak toe</title>
+
+    <!--    StyleSheet-->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!--Start Game Window-->
+<div class="start-game">
+    <h1 class="text-light">Select Character</h1>
+    <div class="profile">
+        <div class="img">
+            <img alt="" class="id" data-id="x" src="./Assets/f1.png">
+            <img alt="" class="id" data-id="y" src="./Assets/m1.png">
+        </div>
+        <div class="img">
+            <img alt="" class="id" data-id="x2" src="./Assets/f2.png">
+            <img alt="" class="id" data-id="y2" src="./Assets/m2.png">
+        </div>
+    </div>
+    <button class="primary-btn" id="startBtn">Start Game</button>
+</div>
+<!-- Game Board -->
+<div class="container">
+    <div class="board" id="board">
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+        <div class="block" data-cell></div>
+    </div>
+</div>
+<!-- Draw Window -->
+<div class="draw-msg">
+    <div class="draw">
+        <h1 class="texr-center text-yellow">Draw</h1>
+    </div>
+    <button id="drawBtn" class="primary-btn">Play Again</button>
+</div>
+
+<!-- Winner Window -->
+<div class="winner-msg">
+    <div class="winner">
+        <h1 class="texr-center text-yellow">Winner</h1>
+    </div>
+    <button id="restartBtn" class="primary-btn">Restart</button>
+</div>
+
+<!-- JavaScript -->
+<script type="module" src="index.js"></script>
+</body>
+</html>
